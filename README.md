@@ -64,14 +64,6 @@ Creating the illusion of a hologram floating inside the mirror:
 
 ---
 
-## Repository Contents
-- `config/` — example MagicMirror config (no private keys) + custom CSS
-- `docs/` — build notes, hardware plan, AI integration concepts
-- `scripts/` — helper scripts for installing/updating MagicMirror on a Pi
-- `media/` — photos and screenshots of the mirror
-
----
-
 ## About This Project
 This mirror is an ongoing maker project exploring:
 - Raspberry Pi hardware  
