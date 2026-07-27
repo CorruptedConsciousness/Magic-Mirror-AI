@@ -34,7 +34,6 @@ The long-term vision is to create a conversational AI presence that lives behind
 - Local Large Language Model (Qwen)
 - Local Text-to-Speech (Piper)
 - Automatic silence timeout
-- Fully offline operation after setup
 
 ## Animated Orb Interface
 
@@ -70,13 +69,8 @@ The orb provides visual feedback so the user always knows what the AI is doing.
                  Audio Output
                       │
                       ▼
-            Animated Orb Interface
-                      │
-                      ▼
             Return to Smart Mirror
 ```
-
----
 
 # Technologies Used
 
@@ -86,8 +80,8 @@ The orb provides visual feedback so the user always knows what the AI is doing.
 - HDMI Monitor
 - USB Microphone
 - USB Speaker
-- Two-Way Mirror (planned)
-- Custom Frame (planned)
+- Two-Way Mirror
+- Custom Frame
 
 ## Software
 
@@ -208,7 +202,7 @@ MIT License
 
 # Author
 
-**Trevor Youmans**
+Trevor Youmans
 
 GitHub: **CorruptedConsciousness**
 
