@@ -1,83 +1,215 @@
-# Magic Mirror
+# 🪞 Magic Mirror AI
 
-This repository documents my personal **MagicMirror²** build — a Raspberry Pi–powered smart mirror with custom modules, hardware tweaks, and a long-term plan for full AI integration. This project is part hardware, part software, and part experimentation in human–computer interaction.
+An AI-powered smart mirror built on a Raspberry Pi that combines local voice recognition, large language models, animated visual feedback, and modern human-computer interaction.
 
-Right now it's a simple smart mirror.  
-The end goal is a **holographic-style AI persona** that can see you, talk to you, and respond with awareness and personality.
+This project began as a standard MagicMirror² installation and has evolved into an interactive AI system capable of holding natural conversations through a fully local voice pipeline.
 
----
-
-## Features
-- Raspberry Pi MagicMirror² installation  
-- Custom dark theme and layout  
-- Core modules (clock, weather, compliments, system info)  
-- Screen + frame mounting setup  
-- Early groundwork for sensor integration  
+**Current Status:** Functional prototype under active development.
 
 ---
 
-## Roadmap — Where This Is Going
-This mirror isn’t meant to stay “just a mirror.”  
-The long-term vision includes:
+# Overview
 
-### 🧠 **AI Assistant Integration**
-- Voice interaction (talk to it naturally)
-- Audio output with a unique persona
-- Local or cloud LLM inference
-- Memory + context awareness
-- Tools for live responses (weather, tasks, schedules, system status)
+Magic Mirror AI is an embedded AI project that explores how modern language models, speech recognition, and animated interfaces can transform an ordinary mirror into an interactive assistant.
 
-### 👤 **Presence & Identity Recognition**
-- Camera-based person detection  
-- Face recognition for personalized responses  
-- Auto-wake when you walk up  
-- “Good morning” style dynamic routines  
-- Personal info modules based on who is standing in front of it
-
-### ✨ **Holographic-Style Display**
-Creating the illusion of a hologram floating inside the mirror:
-- Animated AI avatar / face / geometric visualization  
-- Idle animations when no one is in view  
-- Voice-synced expressions or waveforms  
-- Subtle neon-lit UI that feels alive
-
-### 🔊 **Conversational Behavior**
-- Real-time speech-to-text  
-- Intelligent back-and-forth dialog  
-- Ability to notify, remind, announce  
-- Personality-driven responses  
-- Optional “assistant mode” vs “quiet mode”
-
-### 🛰️ **Information & Automation**
-- Live AI summaries  
-- News / events / tasks delivered conversationally  
-- Home automation hooks (future)
-- Sensor data shaping the UI (temperature, humidity, movement)
-
-### 🛠️ **Hardware Extensions**
-- PIR motion sensors  
-- Temperature/humidity sensors  
-- Camera module  
-- Microphone array  
-- LED accent lighting  
-- Better audio output  
+The long-term vision is to create a conversational AI presence that lives behind the glass—one that can recognize when someone approaches, respond naturally through speech, and present information through a dynamic visual interface.
 
 ---
 
-## About This Project
-This mirror is an ongoing maker project exploring:
-- Raspberry Pi hardware  
-- modular JavaScript UI systems  
-- sensor integration  
-- computer vision  
-- real-time AI interaction  
-- voice interfaces  
-- holographic-style UX  
+# Current Features
 
-The goal is eventually to create an **interactive AI presence** living behind the glass — something more than a dashboard, closer to a personal companion that recognizes you, speaks to you, and reacts like a living system.
+## Smart Mirror
 
-Work in progress. More updates soon.
-<p align="center">
-  <img src="images/ArtistRendering.png" width="600" alt="Magic Mirror Concept Image">
-</p>
+- MagicMirror² dashboard
+- Clock
+- Date
+- Weather
+- Clean dark-themed interface
 
+## Local AI Voice Assistant
+
+- Local wake-word detection
+- Multi-turn voice conversations
+- Local Speech-to-Text (Whisper)
+- Local Large Language Model (Qwen)
+- Local Text-to-Speech (Piper)
+- Automatic silence timeout
+- Fully offline operation after setup
+
+## Animated Orb Interface
+
+During conversations the standard mirror interface is replaced with animated AI states.
+
+- 🎤 Listening
+- 🧠 Thinking
+- 🔊 Speaking
+
+The orb provides visual feedback so the user always knows what the AI is doing.
+
+---
+
+# System Architecture
+
+```
+                    User
+                      │
+                Wake Word
+                      │
+                      ▼
+              Speech-to-Text
+                 (Whisper)
+                      │
+                      ▼
+              Local LLM (Qwen)
+                      │
+                      ▼
+              Text-to-Speech
+                  (Piper)
+                      │
+                      ▼
+                 Audio Output
+                      │
+                      ▼
+            Animated Orb Interface
+                      │
+                      ▼
+            Return to Smart Mirror
+```
+
+---
+
+# Technologies Used
+
+## Hardware
+
+- Raspberry Pi 5 (8 GB)
+- HDMI Monitor
+- USB Microphone
+- USB Speaker
+- Two-Way Mirror (planned)
+- Custom Frame (planned)
+
+## Software
+
+- Python
+- JavaScript
+- HTML
+- CSS
+- Linux
+- MagicMirror²
+- Ollama
+- Qwen
+- Whisper
+- Piper
+- OpenWakeWord
+
+---
+
+# Project Goals
+
+## Voice Interaction
+
+- Natural conversations
+- Fast response times
+- Streaming responses
+- Improved speech synchronization
+
+## Visual Experience
+
+- Smooth orb animations
+- Voice-reactive effects
+- Dynamic lighting
+- Holographic-inspired interface
+
+## AI
+
+- Personality-driven responses
+- Long-term memory
+- Context awareness
+- Tool use
+- Live information retrieval
+
+## Computer Vision
+
+- Camera support
+- Person detection
+- Face recognition
+- Personalized greetings
+
+## Sensors
+
+- Motion detection
+- Temperature
+- Humidity
+- Ambient lighting
+
+## Hardware Improvements
+
+- Two-way mirror glass
+- Custom enclosure
+- Improved microphone
+- Better speakers
+- LED accent lighting
+
+---
+
+# Future Roadmap
+
+- Custom wake phrase
+- Response streaming
+- Reduced latency
+- Voice synchronization
+- Camera integration
+- Face recognition
+- Smart notifications
+- Calendar integration
+- Local memory
+- Home automation support
+- Modular plugin architecture
+
+---
+
+# Gallery
+
+*Screenshots and project photos will be added as development continues.*
+
+- Smart Mirror UI
+- Listening Orb
+- Thinking Orb
+- Speaking Orb
+- Hardware Assembly
+- Finished Mirror
+
+---
+
+# About This Project
+
+This project serves as both a personal learning platform and a long-term exploration of embedded AI systems.
+
+It combines embedded hardware, local artificial intelligence, voice interfaces, Linux development, and modern web technologies into a single interactive device.
+
+The goal is not simply to build a smart mirror, but to explore what a natural, conversational human-computer interface can look like when it runs locally on affordable hardware.
+
+---
+
+# Project Status
+
+🚧 Active Development
+
+Major functionality is operational, with ongoing work focused on performance, latency reduction, user experience, and additional AI capabilities.
+
+---
+
+# License
+
+MIT License
+
+---
+
+# Author
+
+**Trevor Youmans**
+
+GitHub: **CorruptedConsciousness**
+
+*"Building practical embedded AI systems one project at a time."*
