@@ -74,6 +74,8 @@ The orb provides visual feedback so the user always knows what the AI is doing.
 ```
 ## System Architecture
 
+The following diagram illustrates the complete architecture of the current Magic Mirror AI prototype, including startup sequence, runtime flow, major software components, filesystem layout, and conversation pipeline.
+
 ![System Map](images/Mirror_Map_1.1.png)
 
 ---
