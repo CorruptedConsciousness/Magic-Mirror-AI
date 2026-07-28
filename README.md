@@ -72,11 +72,9 @@ The orb provides visual feedback so the user always knows what the AI is doing.
             Return to Smart Mirror
 
 ```
-# System Architecture
+## System Architecture
 
-The diagram below shows how the Magic Mirror AI components communicate.
-
-![System Map](images/Mirror_Map_1.1png)
+![System Map](images/Mirror_Map_1.1.png)
 
 ---
 
